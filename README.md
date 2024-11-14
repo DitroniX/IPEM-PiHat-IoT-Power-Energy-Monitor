@@ -4,6 +4,8 @@ Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, 
 
 ***SDK available - January 2025***   Please contact us for further details.
 
+![IPEM PiHat - Beta Preview](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20ATM90E32%20ATM90E36%20Beta%20Preview.png)
+
 The **IPEM PiHat ATM90E32 ATM90E36 IoT Power Energy Monitor SDK** contains all of the IPEM functionality, except the ESP32, and includes either the ATM90E32 or ATM90E36, then adds the ADC and DAC functionality of IPEC and IPEX.
 
 Top Level **PREVIEW** Features:
@@ -31,6 +33,15 @@ The  **IPEM PiHat IoT Power Energy Monitor**  board main features:
 -   **24C64**  EEPROM
     -   Parameter Settings
     -   Logging
+ - **MCP4728** DAC
+	 - 12bit I2C DAC
+	 - Four Independent Buffered Output Channels
+	 - Configured for Default DAC Out, or Modulated (Example MPPT)
+		 - Configurable Solder Pads
+	 - On-Board DAC EEPROM (For DAC Codes and Addressing)
+	 - Can be configured to drive DAC based on CT Clamp Current / Power
+ - **ADS1115** ADC
+	 - 16bit I2C DAC 
 -   **OLED I2C**
     -   I2C Interface
     -   OLED I2C Connector
@@ -40,9 +51,8 @@ The  **IPEM PiHat IoT Power Energy Monitor**  board main features:
         -   8 to 12V AC RMS
         -   Examples GreenBrook DAT01A or TLC TC TR7
 -   On Board  **NTC**  (Temperature)
--   **USER GPIO/UART**
-    -   2 GPIO for User (GP16 and GP17)
-    -   UART Interfacing (UART 2)
+-   **Isolated Outputs**
+    -   Two Relays for Isolated NC or NO outputs
 -   User  **Programmable Button**
 -   **RGB Status LED**
     -   User Configurable
