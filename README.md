@@ -29,7 +29,7 @@ The  **IPEM PiHat IoT Power Energy Monitor**  board main features:
         -   1 x Phase Neutral CT Clamp
         -   DMA Mode (Logging via SPI)
         -   Power Modes Settings
-        -   Auto DMA selection opton via GP12
+        -   Auto DMA selection opton via GPIO
 -   **24C64**  EEPROM
     -   Parameter Settings
     -   Logging
@@ -53,6 +53,7 @@ The  **IPEM PiHat IoT Power Energy Monitor**  board main features:
 -   On Board  **NTC**  (Temperature)
 -   **Isolated Outputs**
     -   Two Relays for Isolated NC or NO outputs
+    -   Max 2A 30V DC or 0.5A 240V AC
 -   User  **Programmable Button**
 -   **RGB Status LED**
     -   User Configurable
