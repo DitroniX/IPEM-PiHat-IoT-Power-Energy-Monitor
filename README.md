@@ -10,6 +10,18 @@ The **IPEM PiHat ATM90E32 ATM90E36 IoT Power Energy Monitor SDK** contains all o
 
 ![IPEM PiHat - Beta Overview](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/DitroniX.net%20IPEM%20PiHat%20Power%20Energy%20Monitor%20Board%20SDK.png)
 
+**Mains Monitoring Options**
+
+All my boards are designed to be safe and easy to use - with NO live parts or dangerous exposed voltages.
+
+The IPEM and IPEC series are capable of monitoring a number of variations in energy monitoring systems.
+
+ - Single phase (Home, Office etc.) 
+ - Multiple Single Phases.  (Different circuits or home/office rings, Inverters etc.) 
+ - Dual Phase (2 x Live -Typically for USA.  i.e. 2 x 110V) 
+ - Three Phase Star (3 x Live and 1 x Neutral) [Needs ATM90E36 version] 
+ - Three Phase Delta (3 x Live)
+
 Top Level **PREVIEW** Features:
 
 The  **IPEM PiHat IoT Power Energy Monitor**  board main features:
