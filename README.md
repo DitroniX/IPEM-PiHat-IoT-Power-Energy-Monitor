@@ -89,7 +89,7 @@ The  **IPEM PiHat IoT Power Energy Monitor**  board main features:
 
 Details to follow.
 
-You will need to provide external 12V AC for power up of the Energy Monitor functions. You will need to provide a CT Current Clamp. Ideally YHDC SCT-013-000
+You will need to provide a CT Current Clamp. Ideally YHDC SCT-013-000
 
 All test code is OPEN SOURCE and although is is not intended for real world use, it may be freely used, or modified as needed. It is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
