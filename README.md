@@ -4,7 +4,23 @@ Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, 
 
 ***SDK available - January 2025***   Please contact us for further details.
 
+![IPEM PiHat - Beta Preview](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20ATM90E32%20ATM90E36%20Beta%20Preview.png)
+
 The **IPEM PiHat ATM90E32 ATM90E36 IoT Power Energy Monitor SDK** contains all of the IPEM functionality, except the ESP32, and includes either the ATM90E32 or ATM90E36, then adds the ADC and DAC functionality of IPEC and IPEX.
+
+![IPEM PiHat - Beta Overview](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/DitroniX.net%20IPEM%20PiHat%20Power%20Energy%20Monitor%20Board%20SDK.png)
+
+**Mains Monitoring Options**
+
+All my boards are designed to be safe and easy to use - with NO live parts or dangerous exposed voltages.
+
+The IPEM and IPEC series are capable of monitoring a number of variations in energy monitoring systems.
+
+ - Single phase (Home, Office etc.) 
+ - Multiple Single Phases.  (Different circuits or home/office rings, Inverters etc.) 
+ - Dual Phase (2 x Live -Typically for USA.  i.e. 2 x 110V) 
+ - Three Phase Star (3 x Live and 1 x Neutral) [Needs ATM90E36 version] 
+ - Three Phase Delta (3 x Live)
 
 Top Level **PREVIEW** Features:
 
@@ -27,10 +43,19 @@ The  **IPEM PiHat IoT Power Energy Monitor**  board main features:
         -   1 x Phase Neutral CT Clamp
         -   DMA Mode (Logging via SPI)
         -   Power Modes Settings
-        -   Auto DMA selection opton via GP12
+        -   Auto DMA selection opton via GPIO
 -   **24C64**  EEPROM
     -   Parameter Settings
     -   Logging
+ - **MCP4728** DAC
+	 - 12bit I2C DAC
+	 - Four Independent Buffered Output Channels
+	 - Configured for Default DAC Out, or Modulated (Example MPPT)
+		 - Configurable Solder Pads
+	 - On-Board DAC EEPROM (For DAC Codes and Addressing)
+	 - Can be configured to drive DAC based on CT Clamp Current / Power
+ - **ADS1115** ADC
+	 - 16bit I2C DAC 
 -   **OLED I2C**
     -   I2C Interface
     -   OLED I2C Connector
@@ -40,9 +65,9 @@ The  **IPEM PiHat IoT Power Energy Monitor**  board main features:
         -   8 to 12V AC RMS
         -   Examples GreenBrook DAT01A or TLC TC TR7
 -   On Board  **NTC**  (Temperature)
--   **USER GPIO/UART**
-    -   2 GPIO for User (GP16 and GP17)
-    -   UART Interfacing (UART 2)
+-   **Isolated Outputs**
+    -   Two Relays for Isolated NC or NO outputs
+    -   Max 2A 30V DC or 0.5A 240V AC
 -   User  **Programmable Button**
 -   **RGB Status LED**
     -   User Configurable
@@ -64,7 +89,7 @@ The  **IPEM PiHat IoT Power Energy Monitor**  board main features:
 
 Details to follow.
 
-You will need to provide external 12V AC for power up of the Energy Monitor functions. You will need to provide a CT Current Clamp. Ideally YHDC SCT-013-000
+You will need to provide a CT Current Clamp. Ideally YHDC SCT-013-000
 
 All test code is OPEN SOURCE and although is is not intended for real world use, it may be freely used, or modified as needed. It is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
