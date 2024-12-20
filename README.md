@@ -1,10 +1,11 @@
-**IPEM PiHat ATM90E32 ATM90E36 IoT Power Energy Monitor SDK** - PREVIEW
+**IPEM Raspberry Pi PiHat ATM90E32 ATM90E36 IoT Power Energy Monitor SDK** - PREVIEW
 
 Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, the **IPEM PiHat** takes both IPEC and IPEM to another level via the Raspberry Pi.
 
 ***SDK available - January 2025***   Please contact us for further details.
 
-![IPEM PiHat - Beta Preview](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20ATM90E32%20ATM90E36%20Beta%20Preview.png)
+![IPEM PiHat - Beta Preview](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20Raspberry%20Pi%20PiHat%20ATM90E36%20Energy%20Monitor%201.2412.101%203D.png)
+IPEM Raspberry Pi PiHat ATM90E36 Energy Monitor 1.2412.101 3D
 
 The **IPEM PiHat ATM90E32 ATM90E36 IoT Power Energy Monitor SDK** contains all of the IPEM functionality, except the ESP32, and includes either the ATM90E32 or ATM90E36, then adds the ADC and DAC functionality of IPEC and IPEX.
 
