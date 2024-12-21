@@ -75,7 +75,7 @@ The  **IPEM Raspberry Pi PiHat IoT Mains Power Energy Monitor**  board main feat
 -   On Board  **NTC**  (Temperature)
 -   **Isolated Outputs**
     -   Two Relays for Isolated NC or NO outputs
-    -   Max 2A 30V DC or 0.5A 240V AC
+    -   Max 2A 30V DC
 -   User  **Programmable Button**
 -   **RGB Status LED**
     -   User Configurable
