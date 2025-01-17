@@ -1,4 +1,4 @@
-**IPEM Raspberry Pi PiHat ATM90E32 ATM90E36 IoT Power Energy Monitor SDK** -
+**IPEM Raspberry Pi PiHat ATM90E36 IoT Power Energy Monitor SDK** -
 
  - **Super exciting news that my first [KickStarter](https://www.kickstarter.com/projects/ditronix/ipem-raspberry-pihat-iot-atm90-mains-power-energy-monitor) project has been  launched.** 
  - [**Please feel free to take a moment and check it out!**]([url](https://www.kickstarter.com/projects/ditronix/ipem-raspberry-pihat-iot-atm90-mains-power-energy-monitor))
@@ -39,9 +39,9 @@ IPEM Raspberry Pi PiHat ATM90E36 Energy Monitor
 ![IPEM PiHat - Beta Preview](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/DitroniX.net%20Raspberry%20Pi%205%20-IPEM%20Power%20Energy%20Monitor%20-%20Side%20View.jpg)
 IPEM Raspberry Pi PiHat ATM90E36 Energy Monitor 
 
-The IPEM Raspberry Pi PiHat ATM90E32 ATM90E36 IoT Power Energy Monitor SDK contains all of the IPEM functionality, except the ESP32, and includes either the ATM90E32 or ATM90E36, then adds the ADC and DAC functionality of IPEC and IPEX.
+The IPEM Raspberry Pi PiHat ATM90E36 IoT Power Energy Monitor SDK contains all of the IPEM functionality, except the ESP32, but includes the ATM90E36.  It then adds the ADC and DAC functionality of IPEC and IPEX.
 
-The ATM90E36 contains all of the ATM90E32 functions plus additional functionality and so will be the main release.
+The ATM90E36 contains all of the ATM90E32 functions plus additional functionality, and so will be the main release.
 
 ![IPEM PiHat - Beta Overview](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/DitroniX.net%20IPEM%20Raspberry%20Pi%20PiHat%20Power%20Energy%20Monitor%20Board%20SDK%20Interfaces.jpg)
 
@@ -70,12 +70,6 @@ The  **IPEM Raspberry Pi PiHat IoT Mains Power Energy Monitor**  board main feat
     -   All connections are  **low voltage**, for  **safe operation**
     -   **Easy to interface**
 -   _Designed to fit on a Raspberry Pi
--   _Optional_  **ATM90E**  Series
-    -   **ATM90E32**  Energy Monitor
-        -   3 x Phases Line CT Clamp Input
-            -   Example YHDC SCT013000
-        -   3 x Voltage Inputs (AC RMS)
-        -   Power Modes Settings
     -   **ATM90E36**  Energy Monitor
         -   3 x Phases Line CT Clamp Input
             -   Example YHDC SCT013000
@@ -129,7 +123,7 @@ The  **IPEM Raspberry Pi PiHat IoT Mains Power Energy Monitor**  board main feat
 
 Details to follow.
 
-You will need to provide a CT Current Clamp. Ideally YHDC SCT-013-000
+You will need to provide a CT Current Clamp. Ideally YHDC SCT-013-000, or a Rogowski Current Transformer.
 
 All test code is OPEN SOURCE and although is is not intended for real world use, it may be freely used, or modified as needed. It is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
