@@ -7,11 +7,31 @@ Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, 
 
 [![KickStarter](https://github.com/DitroniX/DitroniX/blob/main/Files/KickStarter-SupportUs.png 'KickStarter')](https://www.kickstarter.com/projects/ditronix/ipem-raspberry-pihat-iot-atm90-mains-power-energy-monitor?ref=3vw3ge)
 
+**Board Addressing**
+   
+The IPEM board uses SPI as a means of data communication, with an I2C expander to provide individual GPIO functionality to each ATM90E36.
 
+Following design thoughts prior to finalising the production board, the following improvements have been added.
 
+Change from OneWire to using a two wire I2C Expander. This provides 64 individual addresses, so essentially 64 stacked IPEM's.
 
+The design improvement is a much more sensible route as you now assign a fixed address to each board using a DIP switch. This also makes it so much easier is field and with software support and configuration.
 
+The unique design will allow up to a max of:
 
+* 1 x IPEM PiHat + 63 x IPEM PiHat Lite's
+
+or
+
+* 64 x IPEM PiHat Lite's
+   
+ **CT Clamps and Rogowski Current Transformer**
+ 
+The original IPEM design provided for using the  YHDC SCT-013 100A-50mA.
+
+The updated IPEM PiHat and IPEM PiHat Lite production design, now allows for either use of CT Clamps, and/or Rogowski Current Transformers.  This allows for a wider spectrum of current ranges and cable sizes to be monitored.
+
+ **The Board**
 
 ![IPEM PiHat - Beta Preview](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/DitroniX.net%20Raspberry%20Pi%205%20-%20IPEM%20Power%20Energy%20Monitor%20Board.jpg)
 IPEM Raspberry Pi PiHat ATM90E36 Energy Monitor 
