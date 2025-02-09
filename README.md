@@ -1,11 +1,41 @@
 **IPEM Raspberry Pi PiHat ATM90E36 IoT Power Energy Monitor SDK** -
 
- - **Super exciting news that my first [KickStarter](https://www.kickstarter.com/projects/ditronix/ipem-raspberry-pihat-iot-atm90-mains-power-energy-monitor) project has been  launched.** 
+ - **Super exciting news that my first [KickStarter](https://www.kickstarter.com/projects/ditronix/ipem-raspberry-pihat-iot-atm90-mains-power-energy-monitor) project has been fully funded - so thank you all for your support.** 
  - [**Please feel free to take a moment and check it out!**]([url](https://www.kickstarter.com/projects/ditronix/ipem-raspberry-pihat-iot-atm90-mains-power-energy-monitor))
 
 Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, the **IPEM PiHat** takes both IPEC and IPEM to another level via the Raspberry Pi.
 
 [![KickStarter](https://github.com/DitroniX/DitroniX/blob/main/Files/KickStarter-SupportUs.png 'KickStarter')](https://www.kickstarter.com/projects/ditronix/ipem-raspberry-pihat-iot-atm90-mains-power-energy-monitor?ref=3vw3ge)
+
+**These pages are in the process of being updated to include details of the production version of IPEM PiHat and PiHat Lite.**
+
+As we steam ahead to production, just wanted to quickly share some 3D renders of the final pre-production version of the two great looking boards.
+
+#### Notable visual changes
+
+-   Improved layout from beta board
+-   GPIO Expander
+-   DIL Switches added to speed up configuration
+-   Accurate RTC DS3231 with Battery Backup connection
+-   Switchable Rogowski Inputs and filtering
+-   LDO regulator to provide isolated 3V3 to each stacked board
+-   Swapped DAC and ADC for improved SN ratio
+-   Type C 5V DC input on PiHat Lite. This feeds into the two Raspberry Pi 5V GPIO Pins, so allowing you to power the whole system (single boards, or stacked), via Type C.
+
+## IPEM PiHat
+
+![IPEM PiHat Preproduction 3D Render](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20Raspberry%20Pi%20PiHat%20ATM90E36%201.2501.101%20Angled%20Top%203D.png)
+
+![IPEM PiHat Preproduction 3D Render](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20Raspberry%20Pi%20PiHat%20ATM90E36%201.2501.101%20Angled%20Btm%203D.png)
+
+## IPEM PiHat Lite
+
+![IPEM PiHat Preproduction 3D Render](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20Raspberry%20Pi%20PiHat%20Lite%20ATM90E36%201.2501.101%20Angled%20Top%203D.png)
+
+![IPEM PiHat Preproduction 3D Render](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20Raspberry%20Pi%20PiHat%20Lite%20ATM90E36%201.2501.101%20Angled%20Btm%203D.png)
+
+
+-------------------------------------------------------------------
 
 **Board Addressing**
    
