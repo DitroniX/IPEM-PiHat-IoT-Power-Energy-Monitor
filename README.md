@@ -1,4 +1,4 @@
-**IPEM Raspberry Pi PiHat ATM90E36 IoT Power Energy Monitor SDK** -
+**IPEM PiHat and IPEM PiHat Lite | ATM90E36 IoT Power Energy Monitor SDK**
 
  - **Super exciting news that my first [KickStarter](https://www.kickstarter.com/projects/ditronix/ipem-raspberry-pihat-iot-atm90-mains-power-energy-monitor) project has been fully funded - so thank you all for your support.** 
  - [**Please feel free to take a moment and check it out!**]([url](https://www.kickstarter.com/projects/ditronix/ipem-raspberry-pihat-iot-atm90-mains-power-energy-monitor))
