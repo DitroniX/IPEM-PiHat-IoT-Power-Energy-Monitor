@@ -136,7 +136,9 @@ A comparison table is available [Comparison Table](https://github.com/DitroniX/I
     -   Power safely derived from a SELV / Wall AC/AC Power Supply
         -   8 to 12V AC RMS
         -   Examples GreenBrook DAT01A or TLC TC TR7
--   On Board  **NTC**  (Temperature)
+-   **TMP102** Temperature 
+    -   Digital Ambient Temperature Monitor
+    -   I2C Controlled
 -   **Isolated Outputs**
     -   Two Relays for Isolated NC or NO outputs
     -   Max 2A 30V DC
