@@ -1,12 +1,9 @@
-**IPEM PiHat ATM90E32 ATM90E36 IoT Power Energy Monitor SDK**
+**IPEM PiHat and IPEM PiHat Lite | ATM90E36 IoT Power Energy Monitor SDK**
 
 ------------
 
-**NEW FIRMWARE**: [**FliX**](https://github.com/DitroniX/FLIX-DitroniX-Power-Energy-Monitors-Firmware) is an Integrated Firmware for DitroniX Power Energy Monitor SDK Boards
 
-This folder contains IPEM Example Source Code.
-
-The main develpment code is https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor/tree/main/Code/IPEM_1_Test_Code_ATM90E32_ATM90E36
+This folder will contain expanding example and full test code.
 
   Remember!
   This test code is OPEN SOURCE and formatted for easier viewing.  Although is is not intended for real world use, it may be freely used, or modified as needed.
@@ -19,7 +16,7 @@ Additional information, and other technical details on this project, maybe found
 
 **Repository Folders**
 
- - **Code** *(Code examples for Arduino  IDE and PlatformIO)*
+ - **Code** *(Code examples for Raspberry Pi, Arduino  IDE and PlatformIO)*
  -  **Datasheets and Information** *(Component Datasheets, Schematics, Board Layouts, Photos, Technical Documentation)*
  - **Certification** *(Related Repository Project or Part, Certification Information)*
 

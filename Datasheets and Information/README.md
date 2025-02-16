@@ -1,8 +1,8 @@
-**IPEM PiHat ATM90E32 ATM90E36 IoT Power Energy Monitor SDK**
+**IPEM PiHat and IPEM PiHat Lite | ATM90E36 IoT Power Energy Monitor SDK**
 
 ------------
 
-This folder contains applicable datasheets and IPEM design information.
+This folder contains applicable datasheets and IPEM PiHat and IPEM PiHat Lite design information.
 
 
 
@@ -13,7 +13,7 @@ Additional information, and other technical details on this project, maybe found
 
 **Repository Folders**
 
- - **Code** *(Code examples for Arduino  IDE and PlatformIO)*
+ - **Code** *(Code examples for Raspberry Pi, Arduino  IDE and PlatformIO)*
  -  **Datasheets and Information** *(Component Datasheets, Schematics, Board Layouts, Photos, Technical Documentation)*
  - **Certification** *(Related Repository Project or Part, Certification Information)*
 
