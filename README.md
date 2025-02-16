@@ -7,7 +7,7 @@ Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, 
 
 [![KickStarter](https://github.com/DitroniX/DitroniX/blob/main/Files/KickStarter-SupportUs.png 'KickStarter')](https://www.kickstarter.com/projects/ditronix/ipem-raspberry-pihat-iot-atm90-mains-power-energy-monitor?ref=3vw3ge)
 
-**These pages are in the process of being updated to include details of the production version of IPEM PiHat and PiHat Lite.**
+**These main pages and accompanying [Wiki](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/wiki) pages are in the process of being updated to include details of the production version of IPEM PiHat and PiHat Lite.**
 
 As we steam ahead to production, just wanted to quickly share some 3D renders of the final pre-production version of the two great looking boards.
 
@@ -61,7 +61,7 @@ The original IPEM design provided for using the  YHDC SCT-013 100A-50mA.
 
 The updated IPEM PiHat and IPEM PiHat Lite production design, now allows for either use of CT Clamps, and/or Rogowski Current Transformers.  This allows for a wider spectrum of current ranges and cable sizes to be monitored.
 
- **The Board**
+ **The Prototype Board**
 
 ![IPEM PiHat - Beta Preview](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/DitroniX.net%20Raspberry%20Pi%205%20-%20IPEM%20Power%20Energy%20Monitor%20Board.jpg)
 IPEM Raspberry Pi PiHat ATM90E36 Energy Monitor 
@@ -92,9 +92,14 @@ The IPEM and IPEC series are capable of monitoring a number of variations in ene
  - Three Phase Star (3 x Live and 1 x Neutral) [Needs ATM90E36 version] 
  - Three Phase Delta (3 x Live)
 
-Top Level **PREVIEW** Features:
+## Top Level **PREVIEW** Features:
 
-The  **IPEM Raspberry Pi PiHat IoT Mains Power Energy Monitor**  board main features:
+IPEM PiHat is available in two variants:
+
+* IPEM PiHat
+* IPEM PiHat Lite
+
+A comparison table is available [Comparison Table](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/wiki/Comparison-Table)
 
 -   **Compact**  and  **Flexible Design**  SDK Board
     -   All connections are  **low voltage**, for  **safe operation**
@@ -107,7 +112,10 @@ The  **IPEM Raspberry Pi PiHat IoT Mains Power Energy Monitor**  board main feat
         -   1 x Phase Neutral CT Clamp
         -   DMA Mode (Logging via SPI)
         -   Power Modes Settings
-        -   Auto DMA selection opton via GPIO
+        -   Auto DMA selection option via GPIO
+-   **DS3231**  RTC
+    -   Accurate Real Time Clock
+    -   Battery Back Up
 -   **24C64**  EEPROM
     -   Parameter Settings
     -   Logging
@@ -151,7 +159,7 @@ The  **IPEM Raspberry Pi PiHat IoT Mains Power Energy Monitor**  board main feat
 
 **In The Box**
 
-Details to follow.
+Details and photos to follow.
 
 You will need to provide a CT Current Clamp. Ideally YHDC SCT-013-000, or a Rogowski Current Transformer.
 
@@ -167,7 +175,7 @@ Additional information, and other technical details on this project, maybe found
 
 **Repository Folders**
 
- - **Code** *(Code examples for Arduino  IDE and PlatformIO)*
+ - **Code** *(Code examples for Raspberry Pi, Arduino  IDE and PlatformIO)*
  -  **Datasheets and Information** *(Component Datasheets, Schematics, Board Layouts, Photos, Technical Documentation)*
  - **Certification** *(Related Repository Project or Part, Certification Information)*
 
