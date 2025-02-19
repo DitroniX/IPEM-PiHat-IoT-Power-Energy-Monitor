@@ -9,6 +9,21 @@ Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, 
 
 **These main pages and accompanying [Wiki](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/wiki) pages are in the process of being updated to include details of the production version of IPEM PiHat and PiHat Lite.**
 
+#### Updates:
+
+ - 25-02-17 - Awaiting full BOM STK following Chinese NY Holiday.
+   Preproduction boards can then be ordered/tested.
+ - 25-02-14 - Preproduction IPEM PiHat and IPEM PiHat Lite boards are
+   being ordered.
+ - 25-02-05 - Example 3D renders of pre-production boards. Comparison
+   Chart. 
+ - 25-02-02 - Work now continues in supporting documentation, Wiki and
+   software examples code.
+ - 25-01-23 - Pre-production schematics have been finalised and the
+   boards routed.
+ - 25-01-17 - Collated feedback. Finalise Pre-production design of both IPEM
+   PiHat and IPEM PiHat Lite.
+
 As we steam ahead to production, just wanted to quickly share some 3D renders of the final pre-production version of the two great looking boards.
 
 #### Notable visual changes
