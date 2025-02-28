@@ -11,6 +11,7 @@ Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, 
 
 #### Updates:
 
+ - 25-02-28 - All components are now available. Preproduction boards ordered and currently in Data Preparation.
  - 25-02-27 - Final BOM components are expected to arrive today and then the Preproduction boards will be immediatedly ordered.
  - 25-02-17 - Awaiting full BOM STK following Chinese NY Holiday.
    Preproduction boards can then be ordered/tested.
