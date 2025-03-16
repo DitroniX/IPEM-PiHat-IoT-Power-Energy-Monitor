@@ -11,10 +11,11 @@ Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, 
 
 #### Updates:
 
+ - 25-03-14 - Testing the boards. See this [YouTube Update](https://www.youtube.com/watch?v=YpOppCA2oIU&ab_channel=DitroniX)
  - 25-03-11 - Preproduction boards have arrived and now going through testing, with updates to Wiki on-route.
  - 25-03-05 - Preproduction boards being finalised in SMT manufacture.  Once these arrive, they can be fully tested in preperation for the production boards to be ordered.
  - 25-02-28 - All components are now available. Preproduction boards ordered and currently in Data Preparation.
- - 25-02-27 - Final BOM components are expected to arrive today and then the Preproduction boards will be immediatedly ordered.
+ - 25-02-27 - Final BOM components are expected to arrive today and then the Preproduction boards will be immediately ordered.
  - 25-02-17 - Awaiting full BOM STK following Chinese NY Holiday.
    Preproduction boards can then be ordered/tested.
  - 25-02-14 - Preproduction IPEM PiHat and IPEM PiHat Lite boards are
