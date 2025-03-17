@@ -126,8 +126,9 @@ A comparison table is available [Comparison Table](https://github.com/DitroniX/I
 -   **Compact**  and  **Flexible Design**  SDK Board
     -   All connections are  **low voltage**, for  **safe operation**
     -   **Easy to interface**
--   _Designed to fit on a Raspberry Pi
-    -   **ATM90E36**  Energy Monitor
+    -   Designed to fit on a Raspberry Pi
+    -   Designed to easily Interface other MCUs
+-    **ATM90E36**  Energy Monitor
         - Measures Currents
             -   Single phase
             -   Two phase
@@ -135,18 +136,18 @@ A comparison table is available [Comparison Table](https://github.com/DitroniX/I
             -   Split phase
             -   Three-phase four-wire (3P4W, Y0)
             -   Three-phase three-wire (3P3W, Y or Δ), systems.
-        -   3 x Phases Line CT Clamp Input
+        - 3 x Phases Line CT Clamp Input
             -   Example YHDC SCT013000
-        -   1 x Phase Neutral CT Clamp
+        - 1 x Phase Neutral CT Clamp
             -   Example YHDC SCT013000
             -   Only Required for Three-phase four-wire (3P4W)
-        -   3 x Voltage Inputs (AC RMS)
+        - 3 x Voltage Inputs (AC RMS)
             - Single Phases use same AC Input on all three
             - Three Phase use separate AC Input on each
-        -   DMA Mode (Logging via SPI)
-        -   Power Modes Settings
-        -   Auto DMA selection option via GPIO
-        -   SPI Interface
+        - DMA Mode (Logging via SPI)
+            - Power Modes Settings
+            - Auto DMA selection option via GPIO
+            - SPI Interface
 -   **PCA9671**  GPIO Expander
     -   I2C GPIO Expander
     -   Up to 64 Addresses
@@ -214,7 +215,7 @@ A comparison table is available [Comparison Table](https://github.com/DitroniX/I
     -   Designed to take 5V power from Raspberry Pi Header
     -   Internal 5V to 3V3 LDO Power Supply
     -   Can be powered via Type C UCB
-	    - This also feeds 5V to Pi Header to Raspberry Pi and other PiHat boards.
+	    - This also feeds 5V to Pi Header (Raspberry Pi), and other stacked PiHat boards.
 -   **PCB** designed the same size as a Raspberry Pi.
     -   Also allows for the optional OLED display to be included, or not.
     -   Size**  85 mm x 55 mm
