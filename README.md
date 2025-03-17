@@ -44,17 +44,17 @@ As we steam ahead to production, just wanted to quickly share some 3D renders of
 -   Swapped DAC and ADC for improved SN ratio
 -   Type C 5V DC input on PiHat Lite. This feeds into the two Raspberry Pi 5V GPIO Pins, so allowing you to power the whole system (single boards, or stacked), via Type C.
 
-## IPEM PiHat
+## IPEM PiHat - PreProduction
 
-![IPEM PiHat Preproduction 3D Render](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20Raspberry%20Pi%20PiHat%20ATM90E36%201.2501.101%20Angled%20Top%203D.png)
+![IPEM PiHat - PreProduction](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%201.2502.102%20PreProd.jpg)
 
-![IPEM PiHat Preproduction 3D Render](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20Raspberry%20Pi%20PiHat%20ATM90E36%201.2501.101%20Angled%20Btm%203D.png)
+![IPEM PiHat - PreProduction](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%201.2502.102%20PreProd%20BTM.jpg)
 
-## IPEM PiHat Lite
+## IPEM PiHat Lite - PreProduction
 
-![IPEM PiHat Preproduction 3D Render](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20Raspberry%20Pi%20PiHat%20Lite%20ATM90E36%201.2501.101%20Angled%20Top%203D.png)
+![IPEM PiHat Lite - PreProduction](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20Lite%201.2502.102%20PreProd.jpg)
 
-![IPEM PiHat Preproduction 3D Render](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20Raspberry%20Pi%20PiHat%20Lite%20ATM90E36%201.2501.101%20Angled%20Btm%203D.png)
+![IPEM PiHat Lite - PreProduction](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20Lite%201.2502.102%20PreProd%20BTM.jpg)
 
 
 -------------------------------------------------------------------
