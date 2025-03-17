@@ -9,13 +9,13 @@ Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, 
 
 **These main pages and accompanying [Wiki](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/wiki) pages are in the process of being updated to include details of the production version of IPEM PiHat and PiHat Lite.**
 
-**NOTE:** Once the boards have been put into production (March 2025), fulfillment will be first made to KickStarter Pledges, then they will immediately be made available on eBay.  See updates below for timeline.
+**NOTE:** Once the boards have been put into production (March 2025), fulfillment will be first made to KickStarter Pledges, then they will immediately be made available on [eBay](https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2).  See updates below for timeline.
 
 #### Updates:
 
  - 25-03-14 - Testing the boards. See this [YouTube Update](https://www.youtube.com/watch?v=YpOppCA2oIU&ab_channel=DitroniX)
  - 25-03-11 - Preproduction boards have arrived and now going through testing, with updates to Wiki on-route.
- - 25-03-05 - Preproduction boards being finalised in SMT manufacture.  Once these arrive, they can be fully tested in preperation for the production boards to be ordered.
+ - 25-03-05 - Preproduction boards being finalised in SMT manufacture.  Once these arrive, they can be fully tested in preparation for the production boards to be ordered.
  - 25-02-28 - All components are now available. Preproduction boards ordered and currently in Data Preparation.
  - 25-02-27 - Final BOM components are expected to arrive today and then the Preproduction boards will be immediately ordered.
  - 25-02-17 - Awaiting full BOM STK following Chinese NY Holiday.
@@ -33,12 +33,12 @@ Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, 
 
 As we steam ahead to production, just wanted to quickly share some 3D renders of the final pre-production version of the two great looking boards.
 
-#### Notable visual changes
+#### Notable visual changes from Beta
 
--   Improved layout from beta board
+-   Improved layout
 -   GPIO Expander
 -   DIL Switches added to speed up configuration
--   Accurate RTC DS3231 with Battery Backup connection
+-   Accurate RTC DS3231, with Battery Backup (CR2032) connection
 -   Switchable Rogowski Inputs and filtering
 -   LDO regulator to provide isolated 3V3 to each stacked board
 -   Swapped DAC and ADC for improved SN ratio
@@ -65,7 +65,7 @@ The IPEM board uses SPI as a means of data communication, with an I2C expander t
 
 Following design thoughts prior to finalising the production board, the following improvements have been added.
 
-Change from OneWire to using a two wire I2C Expander. This provides 64 individual addresses, so essentially 64 stacked IPEM's.
+Change from OneWire to using a two wire I2C Expander. This provides 64 individual addresses, so essentially 64 stacked IPEM's (although this is theoretical).
 
 The design improvement is a much more sensible route as you now assign a fixed address to each board using a DIP switch. This also makes it so much easier is field and with software support and configuration.
 
@@ -83,6 +83,10 @@ The original IPEM design provided for using the  YHDC SCT-013 100A-50mA.
 
 The updated IPEM PiHat and IPEM PiHat Lite production design, now allows for either use of CT Clamps, and/or Rogowski Current Transformers.  This allows for a wider spectrum of current ranges and cable sizes to be monitored.
 
+ - CT Clamps are the main stream safe and easy method to monitor currents from the mains tails or consumer unit circuits.
+   
+ - Rogowski Current Transformers are typically for very high currents, or specialised current monitoring.
+
  **The Prototype Board**
 
 ![IPEM PiHat - Beta Preview](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/DitroniX.net%20Raspberry%20Pi%205%20-%20IPEM%20Power%20Energy%20Monitor%20Board.jpg)
@@ -91,7 +95,7 @@ IPEM Raspberry Pi PiHat ATM90E36 Energy Monitor
 ![IPEM PiHat - Beta Preview](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/DitroniX.net%20Raspberry%20Pi%205%20-IPEM%20Power%20Energy%20Monitor%20-%20Side%20View.jpg)
 IPEM Raspberry Pi PiHat ATM90E36 Energy Monitor 
 
-The IPEM Raspberry Pi PiHat ATM90E36 IoT Power Energy Monitor SDK contains all of the IPEM functionality, except the ESP32, but includes the ATM90E36.  It then adds the ADC and DAC functionality of IPEC and IPEX.
+The IPEM Raspberry Pi PiHat ATM90E36 IoT Power Energy Monitor SDK contains all of the IPEM (ESP32) functionality and includes the ATM90E36.  It then adds the ADC and DAC functionality of IPEC and IPEX (ESP32) boards.
 
 The ATM90E36 contains all of the ATM90E32 functions plus additional functionality, and so will be the main release.
 
@@ -100,18 +104,16 @@ The ATM90E36 contains all of the ATM90E32 functions plus additional functionalit
 **Overview**
 ![IPEM PiHat - Beta Overview](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/DitroniX.net%20IPEM%20Raspberry%20Pi%20PiHat%20Power%20Energy%20Monitor%20Board%20SDK%20Overview.png)
 
-
-
 **Mains Monitoring Options**
 
 All my boards are designed to be safe and easy to use - with NO live parts or dangerous exposed voltages.
 
-The IPEM and IPEC series are capable of monitoring a number of variations in energy monitoring systems.
+Both the **IPEM PiHat** and **IPEM PiHat Lite** are capable of monitoring a number of variations in energy monitoring systems.
 
  - Single phase (Home, Office etc.) 
  - Multiple Single Phases.  (Different circuits or home/office rings, Inverters etc.) 
  - Dual Phase (2 x Live -Typically for USA.  i.e. 2 x 110V) 
- - Three Phase Star (3 x Live and 1 x Neutral) [Needs ATM90E36 version] 
+ - Three Phase Star (3 x Live and 1 x Neutral) 
  - Three Phase Delta (3 x Live)
 
 ## Top Level **PREVIEW** Features:
