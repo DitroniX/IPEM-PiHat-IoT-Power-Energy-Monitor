@@ -9,7 +9,7 @@ Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, 
 
 **These main GitHub pages and accompanying [Wiki](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/wiki) pages are in the process of being updated to include details of the production version of IPEM PiHat and PiHat Lite.**
 
-**NOTE:** Once the boards have been put into production (March 2025), fulfillment will be first made to KickStarter Pledges, then they will immediately be made available on [eBay](https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2).  See updates below for timeline.
+**NOTE:** Once the boards have been put into production (Still planned for March 2025), fulfillment will be first made to KickStarter Pledges, then they will immediately be made available on [eBay](https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2).  See updates below for timeline.
 
 #### Updates:
 
@@ -32,9 +32,9 @@ Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, 
  - 25-01-17 - Collated feedback. Finalise Pre-production design of both IPEM
    PiHat and IPEM PiHat Lite.
 
-As we steam ahead to production, just wanted to quickly share some 3D renders of the final pre-production version of the two great looking boards.
+As we steam ahead to production, just wanted to share some photos of the final pre-production version of the two great looking boards.
 
-#### Notable visual changes from Beta
+## Notable visual changes from original Beta which was shown on KickStarter.  These changes took constructive feedback, which helps users to get even more from the boards.
 
 -   Improved layout
 -   GPIO Expander
@@ -44,6 +44,8 @@ As we steam ahead to production, just wanted to quickly share some 3D renders of
 -   LDO regulator to provide isolated 3V3 to each stacked board
 -   Swapped DAC and ADC for improved SN ratio
 -   Type C 5V DC input on PiHat Lite. This feeds into the two Raspberry Pi 5V GPIO Pins, so allowing you to power the whole system (single boards, or stacked), via Type C.
+
+You can see the two boards and get an update on my [YouTube Update](https://www.youtube.com/watch?v=YpOppCA2oIU&ab_channel=DitroniX)
 
 ## IPEM PiHat - PreProduction
 
