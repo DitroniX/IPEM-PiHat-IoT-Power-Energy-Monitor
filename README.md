@@ -13,6 +13,7 @@ Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, 
 
 #### Updates:
 
+ - 25-03-21 - Exellent news in that testing is almost complete.  This is a comprehensive testing of the both boards, various electrical testing and safety compliance.  Taken a few days longer thank planned but all is good.
  - 25-03-14 - Testing the Preproduction boards. See this [YouTube Update](https://www.youtube.com/watch?v=YpOppCA2oIU&ab_channel=DitroniX)
  - 25-03-11 - Preproduction boards have arrived and now going through testing, with updates to Wiki on-route.
  - 25-03-05 - Preproduction boards being finalised in SMT manufacture.  Once these arrive, they can be fully tested in preparation for the production boards to be ordered.
