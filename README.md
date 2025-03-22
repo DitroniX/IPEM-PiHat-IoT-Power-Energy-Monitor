@@ -11,7 +11,7 @@ Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, 
 
 **NOTE:** Once the boards have been put into production (Still planned for March 2025), fulfillment will be first made to KickStarter Pledges, then they will immediately be made available on [eBay](https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2).  See updates below for timeline.
 
-#### Updates:
+## Updates:
 
  - 25-03-21 - Exellent news in that testing is almost complete.  This is a range of comprehensive testing of the both boards, various electrical testing and safety compliance.  Taken a few days longer than planned but all is good.
  - 25-03-14 - Testing the Preproduction boards. See this [YouTube Update](https://www.youtube.com/watch?v=YpOppCA2oIU&ab_channel=DitroniX)
