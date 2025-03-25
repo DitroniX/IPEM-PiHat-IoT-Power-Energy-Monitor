@@ -9,10 +9,11 @@ Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, 
 
 **These main GitHub pages and accompanying [Wiki](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/wiki) pages are in the process of being updated to include details of the production version of IPEM PiHat and PiHat Lite.**
 
-**NOTE:** Once the boards have been put into production (March 2025), fulfillment will be first made to KickStarter Pledges, then they will immediately be made available on [eBay](https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2).  See updates below for timeline.
+**NOTE:** Once the boards have been put into production (Still planned for March 2025), fulfillment will be first made to KickStarter Pledges, then they will immediately be made available on [eBay](https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2).  See updates below for timeline.
 
-#### Updates:
+## Updates:
 
+ - 25-03-21 - Excellent news in that testing is almost complete.  This is a range of comprehensive testing of the both boards, various electrical testing and safety compliance.  Taken a few days longer than planned but all is good.  Production still planned for this month.
  - 25-03-14 - Testing the Preproduction boards. See this [YouTube Update](https://www.youtube.com/watch?v=YpOppCA2oIU&ab_channel=DitroniX)
  - 25-03-11 - Preproduction boards have arrived and now going through testing, with updates to Wiki on-route.
  - 25-03-05 - Preproduction boards being finalised in SMT manufacture.  Once these arrive, they can be fully tested in preparation for the production boards to be ordered.
@@ -31,9 +32,9 @@ Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, 
  - 25-01-17 - Collated feedback. Finalise Pre-production design of both IPEM
    PiHat and IPEM PiHat Lite.
 
-As we steam ahead to production, just wanted to quickly share some 3D renders of the final pre-production version of the two great looking boards.
+As we steam ahead to production, just wanted to share some photos of the final pre-production version of the two great looking boards.
 
-#### Notable visual changes from Beta
+## Notable visual changes from original Beta which was shown on KickStarter.  These changes took constructive feedback, which helps users to get even more from the boards.
 
 -   Improved layout
 -   GPIO Expander
@@ -44,17 +45,19 @@ As we steam ahead to production, just wanted to quickly share some 3D renders of
 -   Swapped DAC and ADC for improved SN ratio
 -   Type C 5V DC input on PiHat Lite. This feeds into the two Raspberry Pi 5V GPIO Pins, so allowing you to power the whole system (single boards, or stacked), via Type C.
 
-## IPEM PiHat
+You can see the two boards and get an update on my [YouTube Update](https://www.youtube.com/watch?v=YpOppCA2oIU&ab_channel=DitroniX)
 
-![IPEM PiHat Preproduction 3D Render](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20Raspberry%20Pi%20PiHat%20ATM90E36%201.2501.101%20Angled%20Top%203D.png)
+## IPEM PiHat - PreProduction
 
-![IPEM PiHat Preproduction 3D Render](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20Raspberry%20Pi%20PiHat%20ATM90E36%201.2501.101%20Angled%20Btm%203D.png)
+![IPEM PiHat - PreProduction](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%201.2502.102%20PreProd.jpg)
 
-## IPEM PiHat Lite
+![IPEM PiHat - PreProduction](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%201.2502.102%20PreProd%20BTM.jpg)
 
-![IPEM PiHat Preproduction 3D Render](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20Raspberry%20Pi%20PiHat%20Lite%20ATM90E36%201.2501.101%20Angled%20Top%203D.png)
+## IPEM PiHat Lite - PreProduction
 
-![IPEM PiHat Preproduction 3D Render](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20Raspberry%20Pi%20PiHat%20Lite%20ATM90E36%201.2501.101%20Angled%20Btm%203D.png)
+![IPEM PiHat Lite - PreProduction](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20Lite%201.2502.102%20PreProd.jpg)
+
+![IPEM PiHat Lite - PreProduction](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20Lite%201.2502.102%20PreProd%20BTM.jpg)
 
 
 -------------------------------------------------------------------
