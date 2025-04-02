@@ -13,7 +13,7 @@ Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, 
 
 ## Updates:
 
- - 25-03-26 - Production boards (Both Variants), in Production QA.  Delivery to me by early next week.  Final Check on Production boards upon arrival and then shipping to KickStarter Backers! Then added to eBay. Excellent.
+ - 25-04-02 - Production boards (Both Variants), in Production QA.  Delivery to me by early next week.  Final Check on Production boards upon arrival and then shipping to KickStarter Backers! Then added to eBay. Excellent.
  - 25-03-26 - Preproduction testing complete and Production boards (Both Variants), ordered.
  - 25-03-21 - Excellent news in that testing is almost complete.  This is a range of comprehensive testing of the both boards, various electrical testing and safety compliance.  Taken a few days longer than planned but all is good.  Production still planned for this month.
  - 25-03-14 - Testing the Preproduction boards. See this [YouTube Update](https://www.youtube.com/watch?v=YpOppCA2oIU&ab_channel=DitroniX)
