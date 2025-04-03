@@ -7,9 +7,9 @@ Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, 
 
 [![KickStarter](https://github.com/DitroniX/DitroniX/blob/main/Files/KickStarter-SupportUs.png 'KickStarter')](https://www.kickstarter.com/projects/ditronix/ipem-raspberry-pihat-iot-atm90-mains-power-energy-monitor?ref=3vw3ge)
 
-**These main GitHub pages and accompanying [Wiki](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/wiki) pages are in the process of being updated to include details of the production version of IPEM PiHat and PiHat Lite.**
+**These main GitHub pages and accompanying [Wiki](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/wiki) pages are being updated to include details of the production version of IPEM PiHat and PiHat Lite.**
 
-**NOTE:** Once the boards have been put into production (Still planned for March 2025), fulfillment will be first made to KickStarter Pledges, then they will immediately be made available on [eBay](https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2).  See updates below for timeline.
+**NOTE:** These boards have been put into production, fulfillment will be first made to KickStarter Pledges, then they will immediately be made available on [eBay] (https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2).  See updates below for timeline.
 
 ## Updates:
 
@@ -228,9 +228,31 @@ A comparison table is available [Comparison Table](https://github.com/DitroniX/I
     -   Size**  85 mm x 55 mm
 ------------
 
-**In The Box**
+**In The Box - [Ship Kit](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/wiki/IPEM-PiHat-Ship-Kit)**
 
-Details and photos to follow.
+In the Box for IPEM PiHat
+
+ - 1 x IPEM PiHat 	
+	 - SMD (Surface Mounted Components) Populated / Tested.
+	 - 1 x Terminal Blocks (4 Pin Not Soldered) 
+	 - 1 x 40 Pin 2x20 Header (Not Soldered) 
+	 - 4 x Sets of M2.5 x 18 Pillar, Pan Heads and Nuts 
+	 - 2 x 6 pin JST Pigtail (Open Ended for ADC/DAC) 
+	 - 1 x Strip of straight pin header (Not Soldered) 
+	 - 1 x 4 pin header socket (Not Soldered) 
+	 - 1 x Complimentary screwdriver
+
+In the Box for IPEM PiHat Lite
+
+ - 1 x IPEM PiHat Lite	
+	 - SMD (Surface Mounted Components) Populated / Tested.
+	 - 1 x Terminal Blocks (4 Pin Not Soldered) 
+	 - 1 x 40 Pin 2x20 Header (Not Soldered) 
+	 - 4 x Sets of M2.5 x 15 Pillar, Pan Heads and Nuts 
+	 - 1 x Strip of straight pin header (Not Soldered) 
+	 - 1 x 4 pin header socket (Not Soldered) 
+	 - 1 x Complimentary screwdriver
+
 
 You will need to provide a CT Current Clamp. Ideally a YHDC SCT-013-000.  A Rogowski Current Transformer maybe used for very high currents or specialist measurements.
 
