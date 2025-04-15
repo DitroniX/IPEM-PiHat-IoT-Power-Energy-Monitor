@@ -9,10 +9,13 @@ Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, 
 
 **These main GitHub pages and accompanying [Wiki](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/wiki) pages are being updated to include details of the production version of IPEM PiHat and PiHat Lite.**
 
-**NOTE:** These boards have been put into production, fulfillment will be first made to KickStarter Pledges, then they will immediately be made available on [eBay] (https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2).  See updates below for timeline.
+Whilst these boards are directed towards the Raspberry Pi, due to the ease of interfacing and in order to exercise and fully test these, I took a version of [FLiX](https://github.com/DitroniX/FLIX-DitroniX-Power-Energy-Monitors-Firmware) and made a number of changes in order to drive these newer boards via an ESP32 Interposer. This version of FLiX is called FLIX Plus.
+
+**NOTE:** These boards are now complete, with initial fulfillment to KickStarter Pledges.  They are now available to buy on [eBay] (https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2).  
 
 ## Updates:
 
+ - 25-04-14 - Kickstarter fulfillment complete. Both version of the boards are now available for purcase on eBay.
  - 25-04-08 - Boards Tested and pleased to share, that they are now being shipped to all Kickstarter backers.  Many thanks to all the support on this project.
  - 25-04-02 - Production boards (Both Variants), in Production QA.  Delivery to me by early next week.  Final Check on Production boards upon arrival and then shipping to KickStarter Backers! Then added to eBay. Excellent.
  - 25-03-26 - Preproduction testing complete and Production boards (Both Variants), ordered.
