@@ -15,6 +15,7 @@ Whilst these boards are directed towards the Raspberry Pi, due to the ease of in
 
 ## Updates:
 
+ - 25-04-15 - 3D Render and STL files released to build a stackable enclosure.  [3D Files](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/tree/main/Enclosure%203D)
  - 25-04-14 - Kickstarter fulfillment complete. Both version of the boards are now available for purcase on eBay.
  - 25-04-08 - Boards Tested and pleased to share, that they are now being shipped to all Kickstarter backers.  Many thanks to all the support on this project.
  - 25-04-02 - Production boards (Both Variants), in Production QA.  Delivery to me by early next week.  Final Check on Production boards upon arrival and then shipping to KickStarter Backers! Then added to eBay. Excellent.
@@ -112,6 +113,11 @@ The ATM90E36 contains all of the ATM90E32 functions plus additional functionalit
 
 **Overview**
 ![IPEM PiHat - Beta Overview](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/DitroniX.net%20IPEM%20Raspberry%20Pi%20PiHat%20Power%20Energy%20Monitor%20Board%20SDK%20Overview.png)
+
+[3D Files](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/tree/main/Enclosure%203D)
+
+Example Stacked Render
+![Example IPEM PiHat Enclosure Render](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Enclosure%203D/IPEM_PiHat_Assembly_Fan_Ope+End_screws_Hexnuts%20v30.png)
 
 **Mains Monitoring Options**
 
