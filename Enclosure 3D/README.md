@@ -2,10 +2,13 @@
 
 This folder contains 3D related files for printing a stackable enclosure for the IPEM PiHat and IPEM PiHat Lite.
 
-Many thanks to TwoLeftFeet for the kind contribution.
+Many thanks to *TwoLeftFeet* for the kind contribution.
+
+Example Stacked Render
+![Example IPEM PiHat Enclosure Render](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Enclosure%203D/IPEM_PiHat_Assembly_Fan_Ope+End_screws_Hexnuts%20v30.png)
 
 
-Updates
+**Updates**
 
 250415 Initial Release - IPEM_PiHat_Assembly_Fan_Ope+End_screws_Hexnuts v30
 
