@@ -10,6 +10,8 @@ Example Stacked Render
 
 **Updates**
 
+250424 Files added to ThingiVerse https://www.thingiverse.com/thing:7019134
+
 250415 Initial Release - IPEM_PiHat_Assembly_Fan_Ope+End_screws_Hexnuts v30
 
 250311 Mechanical development and [Alpha release](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/wiki/Stackable-Enclosure-3D) of enclosure
