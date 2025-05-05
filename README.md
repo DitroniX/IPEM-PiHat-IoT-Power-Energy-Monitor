@@ -15,6 +15,7 @@ Whilst these boards are directed towards the Raspberry Pi, due to the ease of in
 
 ## Updates:
 
+ - 25-04-24 - 3D Render and STL files released to build a stackable enclosure. [ThingiVerse](https://www.thingiverse.com/thing:7019134)
  - 25-04-15 - 3D Render and STL files released to build a stackable enclosure.  [3D Files](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/tree/main/Enclosure%203D)
  - 25-04-14 - Kickstarter fulfillment complete. Both version of the boards are now available for purcase on eBay.
  - 25-04-08 - Boards Tested and pleased to share, that they are now being shipped to all Kickstarter backers.  Many thanks to all the support on this project.
