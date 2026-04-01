@@ -1,4 +1,4 @@
-# IPEM PiHat and IPEM PiHat Lite |ATM90E36 IoT Power Energy Monitor SDK
+# IPEM PiHat and IPEM PiHat Lite | ATM90E36 IoT Mains Power Energy Monitors
 
 **Supporting STEM Electronic Internet of Things & Home Automation Technology for Smart Energy Monitoring**
 
