@@ -82,38 +82,6 @@ As the IPEM boards only safely sample the AC via a low voltage transformer, you 
     -   Eastern Japan is 50 Hz, and western Japan is 60 Hz
 -   Should you wish to know more, see this [Wiki](https://en.wikipedia.org/wiki/Mains_electricity_by_country)
 
-
-## Updates:
-
-  - 26-04-01 - IPEM PiHat Updated to include Jumpers for Single Phase. New production run in progress.  Stock due mid April.
- - 25-06-15 - [FLiX PiHat](https://github.com/DitroniX/FLIX-DitroniX-Power-Energy-Monitors-Firmware) Development Code Firmware Beta released
- - 25-04-24 - 3D Render and STL files released to build a stackable enclosure. [ThingiVerse](https://www.thingiverse.com/thing:7019134)
- - 25-04-15 - 3D Render and STL files released to build a stackable enclosure.  [3D Files](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/tree/main/Enclosure%203D)
- - 25-04-14 - Kickstarter fulfillment complete. Both version of the boards are now available for purcase on eBay.
- - 25-04-08 - Boards Tested and pleased to share, that they are now being shipped to all Kickstarter backers.  Many thanks to all the support on this project.
- - 25-04-02 - Production boards (Both Variants), in Production QA.  Delivery to me by early next week.  Final Check on Production boards upon arrival and then shipping to KickStarter Backers! Then added to eBay. Excellent.
- - 25-03-26 - Preproduction testing complete and Production boards (Both Variants), ordered.
- - 25-03-21 - Excellent news in that testing is almost complete.  This is a range of comprehensive testing of the both boards, various electrical testing and safety compliance.  Taken a few days longer than planned but all is good.  Production still planned for this month.
- - 25-03-14 - Testing the Preproduction boards. See this [YouTube Update](https://www.youtube.com/watch?v=YpOppCA2oIU&ab_channel=DitroniX)
- - 25-03-11 - Preproduction boards have arrived and now going through testing, with updates to Wiki on-route.
- - 25-03-05 - Prep6roduction boards being finalised in SMT manufacture.  Once these arrive, they can be fully tested in preparation for the production boards to be ordered.
- - 25-02-28 - All components are now available. Preproduction boards ordered and currently in Data Preparation.
- - 25-02-27 - Final BOM components are expected to arrive today and then the Preproduction boards will be immediately ordered.
- - 25-02-17 - Awaiting full BOM STK following Chinese NY Holiday.
-   Preproduction boards can then be ordered/tested.
- - 25-02-14 - Preproduction IPEM PiHat and IPEM PiHat Lite boards are
-   being ordered.
- - 25-02-05 - Example 3D renders of pre-production boards. Comparison
-   Chart. 
- - 25-02-02 - Work now continues in supporting documentation, Wiki and
-   software examples code.
- - 25-01-23 - Pre-production schematics have been finalised and the
-   boards routed.
- - 25-01-17 - Collated feedback. Finalise Pre-production design of both IPEM
-   PiHat and IPEM PiHat Lite.
-
-As we steam ahead to production, just wanted to share some photos of the final pre-production version of the two great looking boards.
-
 -------------------------------------------------------------------
 
 **Board Addressing**
@@ -329,6 +297,39 @@ All test code is OPEN SOURCE and although is is not intended for real world use,
 [![Display-Type-B](https://raw.githubusercontent.com/DitroniX/DitroniX/main/Files/DitroniX.net%20STEM%20IoT%20eBay.jpg?raw=true)](https://www.ebay.co.uk/usr/ditronixuk)
 
 Our STEM SDK boards and accessories are available from our online shops on [eBay](https://www.ebay.co.uk/usr/ditronixuk) 
+
+## Updates:
+
+  - 26-04-01 - IPEM PiHat Updated to include Jumpers for Single Phase. New production run in progress.  Stock due mid April.
+ - 25-06-15 - [FLiX PiHat](https://github.com/DitroniX/FLIX-DitroniX-Power-Energy-Monitors-Firmware) Development Code Firmware Beta released
+ - 25-04-24 - 3D Render and STL files released to build a stackable enclosure. [ThingiVerse](https://www.thingiverse.com/thing:7019134)
+ - 25-04-15 - 3D Render and STL files released to build a stackable enclosure.  [3D Files](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/tree/main/Enclosure%203D)
+ - 25-04-14 - Kickstarter fulfillment complete. Both version of the boards are now available for purcase on eBay.
+ - 25-04-08 - Boards Tested and pleased to share, that they are now being shipped to all Kickstarter backers.  Many thanks to all the support on this project.
+ - 25-04-02 - Production boards (Both Variants), in Production QA.  Delivery to me by early next week.  Final Check on Production boards upon arrival and then shipping to KickStarter Backers! Then added to eBay. Excellent.
+ - 25-03-26 - Preproduction testing complete and Production boards (Both Variants), ordered.
+ - 25-03-21 - Excellent news in that testing is almost complete.  This is a range of comprehensive testing of the both boards, various electrical testing and safety compliance.  Taken a few days longer than planned but all is good.  Production still planned for this month.
+ - 25-03-14 - Testing the Preproduction boards. See this [YouTube Update](https://www.youtube.com/watch?v=YpOppCA2oIU&ab_channel=DitroniX)
+ - 25-03-11 - Preproduction boards have arrived and now going through testing, with updates to Wiki on-route.
+ - 25-03-05 - Prep6roduction boards being finalised in SMT manufacture.  Once these arrive, they can be fully tested in preparation for the production boards to be ordered.
+ - 25-02-28 - All components are now available. Preproduction boards ordered and currently in Data Preparation.
+ - 25-02-27 - Final BOM components are expected to arrive today and then the Preproduction boards will be immediately ordered.
+ - 25-02-17 - Awaiting full BOM STK following Chinese NY Holiday.
+   Preproduction boards can then be ordered/tested.
+ - 25-02-14 - Preproduction IPEM PiHat and IPEM PiHat Lite boards are
+   being ordered.
+ - 25-02-05 - Example 3D renders of pre-production boards. Comparison
+   Chart. 
+ - 25-02-02 - Work now continues in supporting documentation, Wiki and
+   software examples code.
+ - 25-01-23 - Pre-production schematics have been finalised and the
+   boards routed.
+ - 25-01-17 - Collated feedback. Finalise Pre-production design of both IPEM
+   PiHat and IPEM PiHat Lite.
+
+As we steam ahead to production, just wanted to share some photos of the final pre-production version of the two great looking boards.
+
+
 ## **Further Information**
 
 Additional information, and other technical details on this project, maybe found in the related repository pages.
