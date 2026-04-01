@@ -1,17 +1,84 @@
-**IPEM PiHat and IPEM PiHat Lite | ATM90E36 IoT Power Energy Monitor SDK**
+# IPEM PiHat and IPEM PiHat Lite |ATM90E36 IoT Power Energy Monitor SDK
 
- - **Super exciting news that my first [KickStarter](https://www.kickstarter.com/projects/ditronix/ipem-raspberry-pihat-iot-atm90-mains-power-energy-monitor) project has been fully funded - so thank you all for your support.** 
- - [**Please feel free to take a moment and check it out!**]([url](https://www.kickstarter.com/projects/ditronix/ipem-raspberry-pihat-iot-atm90-mains-power-energy-monitor))
+**Supporting STEM Electronic Internet of Things & Home Automation Technology for Smart Energy Monitoring**
+
+[![DitroniX WiKi Pages](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/GitHub%20WiKi.png?raw=true)](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/wiki)
+
+[**For Latest Project Updates - Click Here**](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/edit/main/README.md#updates)
+
+## Welcome to IPEM PiHat
+
+The **IPEM PiHat** and **IPEM PiHat Lite,** are Mains AC Power Energy Monitor boards, which are designed to be used alongside Raspberry Pi, and similar single board computers.
+
+### What is a Power Energy Monitor?
+
+A power energy monitor is a device that safely samples the [AC Voltage, and Current flow](https://github.com/DitroniX/IPEM-Plus-ESP32-C5-LoRa-LoRaWAN-IoT-Mains-Power-Energy-Monitor/wiki/What-is-a-Power-Energy-Monitor?), from one, or more, electrical phases, and from this, derives a range of accurate mains power measurements which can then be used for smart metering, or energy monitoring purposes.
+
+These individual measurements can then be extrapolated into a range of useful real-time data such as total RMS Power, Active, Re-Active Power, Harmonic Power, Power Factor, Phase Angles, Frequency, etc.
+
+This real-time data can then be sent via Wi-Fi or Ethernet, through to IoT Home and Industrial Energy Monitoring systems like [Home Assistant](https://www.home-assistant.io/docs/energy/).
+
+## Variants
+
+Two variants of IPEM PiHat are available.
+
+ - IPEM PiHat 
+	 - Full board with ATM90E36, DS3231SN RTC, Relays, 
+ - IPEM PiHat Lite
+	 - ATM90E36, Stackable
+
+[Full Comparison Table.](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/wiki/Comparison-Table)
 
 Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, the **IPEM PiHat** takes both IPEC and IPEM to another level via the Raspberry Pi.
 
-[![DitroniX WiKi Pages](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/GitGub%20WiKi.png?raw=true)](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/wiki)
+![IPEM PiHat ](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20Top.jpg)
 
-**These main GitHub pages and accompanying [Wiki](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/wiki) pages are being updated to include details of the production version of IPEM PiHat and PiHat Lite.**
+![IPEM PiHat Lite](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20Lite%20Top.jpg)
 
-Whilst these boards are directed towards the Raspberry Pi, due to the ease of interfacing and in order to exercise and fully test these, I took a version of [FLiX](https://github.com/DitroniX/FLIX-DitroniX-Power-Energy-Monitors-Firmware) and made a number of changes in order to drive these newer boards via an ESP32 Interposer. This version of FLiX is called FLIX Plus.
+## ATM90E36
 
-**NOTE:** These boards are now complete, with initial fulfillment to KickStarter Pledges.  They are now available to buy on [eBay] (https://www.ebay.co.uk/sch/i.html?_saslop=1&_ssn=ditronixuk&_dmd=2).  
+### What is the ATM90 device?
+
+The heart of the IPEM boards is the Microchip  ATM90E36. These are high-performance and accurate AC mains energy metering devices for:
+
+-   Single phase
+-   Two phase
+-   Dual phase
+-   Split phase
+-   Three-phase four-wire (3P4W, Y0)
+-   Three-phase three-wire (3P3W, Y or Δ), systems.
+
+The ATM90 device is used in a range of premises and applications including:
+
+-   Smart Meters
+-   EV Charging
+-   Homes
+-   Education
+-   Offices
+-   Commercial
+-   Factories6
+-   Farms
+-   Greenhouses
+-   Factories
+-   Industry
+-   Solar Farms
+-   Wind Farms
+-   Off Grid Systems
+
+The IPEM PiHat core is the [ATM90E36A](https://www.microchip.com/en-us/product/atm90e36a) which is used around the world in power monitoring instruments that also need to measure voltage, current, THD, DFT and mean power.
+
+The IPEM boards requires little, to no, calibration and is easy to setup. You can use the ATM90E32 code for the standard functionality, with updated register values.
+
+As the IPEM boards only safely sample the AC via a low voltage transformer, you are able to monitor varying AC (RMS) voltage mains around the World, such as:
+
+-   USA and Canada which typically is 120 V or 230 V @ 60 Hz
+    -   With ranges around 114 V to 126 V
+-   Europe and UK which typically is 230 V @ 50 Hz
+    -   With ranges around 216 V to 253 V
+-   Japan which typically is 100 V @ 50 Hz or 60 Hz
+    -   Eastern Japan is 50 Hz, and western Japan is 60 Hz
+-   Should you wish to know more, see this [Wiki](https://en.wikipedia.org/wiki/Mains_electricity_by_country)
+
 
 ## Updates:
 
@@ -26,7 +93,7 @@ Whilst these boards are directed towards the Raspberry Pi, due to the ease of in
  - 25-03-21 - Excellent news in that testing is almost complete.  This is a range of comprehensive testing of the both boards, various electrical testing and safety compliance.  Taken a few days longer than planned but all is good.  Production still planned for this month.
  - 25-03-14 - Testing the Preproduction boards. See this [YouTube Update](https://www.youtube.com/watch?v=YpOppCA2oIU&ab_channel=DitroniX)
  - 25-03-11 - Preproduction boards have arrived and now going through testing, with updates to Wiki on-route.
- - 25-03-05 - Preproduction boards being finalised in SMT manufacture.  Once these arrive, they can be fully tested in preparation for the production boards to be ordered.
+ - 25-03-05 - Prep6roduction boards being finalised in SMT manufacture.  Once these arrive, they can be fully tested in preparation for the production boards to be ordered.
  - 25-02-28 - All components are now available. Preproduction boards ordered and currently in Data Preparation.
  - 25-02-27 - Final BOM components are expected to arrive today and then the Preproduction boards will be immediately ordered.
  - 25-02-17 - Awaiting full BOM STK following Chinese NY Holiday.
@@ -57,17 +124,7 @@ As we steam ahead to production, just wanted to share some photos of the final p
 
 You can see the two boards and get an update on my [YouTube Update](https://www.youtube.com/watch?v=YpOppCA2oIU&ab_channel=DitroniX)
 
-## IPEM PiHat - PreProduction
 
-![IPEM PiHat - PreProduction](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%201.2502.102%20PreProd.jpg)
-
-![IPEM PiHat - PreProduction](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%201.2502.102%20PreProd%20BTM.jpg)
-
-## IPEM PiHat Lite - PreProduction
-
-![IPEM PiHat Lite - PreProduction](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20Lite%201.2502.102%20PreProd.jpg)
-
-![IPEM PiHat Lite - PreProduction](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20Lite%201.2502.102%20PreProd%20BTM.jpg)
 
 
 -------------------------------------------------------------------
