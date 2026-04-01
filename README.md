@@ -30,14 +30,17 @@ Two variants of IPEM PiHat are available.
 [Full Comparison Table.](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/wiki/Comparison-Table)
 
 Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, the **IPEM PiHat** takes both IPEC and IPEM to another level via the Raspberry Pi.
+IPEM PiHat 
 
 ![IPEM PiHat ](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20Top.jpg)
 
+IPEM PiHat Lite
+
 ![IPEM PiHat Lite](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20Lite%20Top.jpg)
 
-## ATM90E36
+## ATM90E36 Mains Energy Metering and Monitoring 
 
-### What is the ATM90 device?
+### What is the ATM90E36 device?
 
 The heart of the IPEM boards is the Microchip  ATM90E36. These are high-performance and accurate AC mains energy metering devices for:
 
@@ -111,27 +114,11 @@ As the IPEM boards only safely sample the AC via a low voltage transformer, you 
 
 As we steam ahead to production, just wanted to share some photos of the final pre-production version of the two great looking boards.
 
-## Notable visual changes from original Beta which was shown on KickStarter.  These changes took constructive feedback, which helps users to get even more from the boards.
-
--   Improved layout
--   GPIO Expander
--   DIL Switches added to speed up configuration
--   Accurate RTC DS3231, with Battery Backup (CR2032) connection
--   Switchable Rogowski Inputs and filtering
--   LDO regulator to provide isolated 3V3 to each stacked board
--   Swapped DAC and ADC for improved SN ratio
--   Type C 5V DC input on PiHat Lite. This feeds into the two Raspberry Pi 5V GPIO Pins, so allowing you to power the whole system (single boards, or stacked), via Type C.
-
-You can see the two boards and get an update on my [YouTube Update](https://www.youtube.com/watch?v=YpOppCA2oIU&ab_channel=DitroniX)
-
-
-
-
 -------------------------------------------------------------------
 
 **Board Addressing**
    
-The IPEM board uses SPI as a means of data communication, with an I2C expander to provide individual GPIO functionality to each ATM90E36.
+The IPEM PiHat boards uses SPI as a means of data communication, with an I2C expander to provide individual GPIO functionality to each ATM90E36.
 
 Following design thoughts prior to finalising the production board, the following improvements have been added.
 
@@ -157,9 +144,6 @@ The updated IPEM PiHat and IPEM PiHat Lite production design, now allows for eit
    
  - Rogowski Current Transformers are typically for very high currents, or specialised current monitoring.
 
- **The Prototype Board**
-
-![IPEM PiHat - Beta Preview](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/DitroniX.net%20Raspberry%20Pi%205%20-%20IPEM%20Power%20Energy%20Monitor%20Board.jpg)
 IPEM Raspberry Pi PiHat ATM90E36 Energy Monitor 
 
 ![IPEM PiHat - Beta Preview](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/DitroniX.net%20Raspberry%20Pi%205%20-IPEM%20Power%20Energy%20Monitor%20-%20Side%20View.jpg)
@@ -167,12 +151,16 @@ IPEM Raspberry Pi PiHat ATM90E36 Energy Monitor
 
 The IPEM Raspberry Pi PiHat ATM90E36 IoT Power Energy Monitor SDK contains all of the IPEM (ESP32) functionality and includes the ATM90E36.  It then adds the ADC and DAC functionality of IPEC and IPEX (ESP32) boards.
 
-The ATM90E36 contains all of the ATM90E32 functions plus additional functionality, and so will be the main release.
+The ATM90E36 contains all of the ATM90E32 functions plus additional functionality.
 
 ![IPEM PiHat - Beta Overview](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/DitroniX.net%20IPEM%20Raspberry%20Pi%20PiHat%20Power%20Energy%20Monitor%20Board%20SDK%20Interfaces.jpg)
 
 **Overview**
 ![IPEM PiHat - Beta Overview](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/DitroniX.net%20IPEM%20Raspberry%20Pi%20PiHat%20Power%20Energy%20Monitor%20Board%20SDK%20Overview.png)
+
+**Example Stack-up**
+![PiHats Stacked](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/Stacking%20Headers%20with%20Standoff%20Fixings.jpg)
+
 
 [3D Files](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/tree/main/Enclosure%203D)
 
@@ -191,7 +179,7 @@ Both the **IPEM PiHat** and **IPEM PiHat Lite** are capable of monitoring a numb
  - Three Phase Star (3 x Live and 1 x Neutral) 
  - Three Phase Delta (3 x Live)
 
-## Top Level **PREVIEW** Features:
+## Top Level Features:
 
 IPEM PiHat is available in two variants:
 
@@ -323,8 +311,17 @@ In the Box for IPEM PiHat Lite
 	 - 1 x 4 pin header socket (Not Soldered) 
 	 - 1 x Complimentary screwdriver
 
+Example Ship Kit
 
-You will need to provide a CT Current Clamp. Ideally a YHDC SCT-013-000.  A Rogowski Current Transformer maybe used for very high currents or specialist measurements.
+![IPEM PiHat Lite	](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20Lite%20Ship%20Kit.jpg)
+
+## Current Clamps
+
+You will need to provide a CT Current Clamp. Ideally a YHDC SCT-013-000.  
+
+A Rogowski Current Transformer maybe used for very high currents or specialist measurements.
+
+## Code
 
 All test code is OPEN SOURCE and although is is not intended for real world use, it may be freely used, or modified as needed. It is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
