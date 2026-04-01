@@ -32,6 +32,12 @@ Two variants of IPEM PiHat are available.
 Based on the popular https://github.com/DitroniX/IPEM-IoT-Power-Energy-Monitor, the **IPEM PiHat** takes both IPEC and IPEM to another level via the Raspberry Pi.
 IPEM PiHat 
 
+#### IPEM Plus
+
+The **IPEM PiHat** also has a new big brother called [IPEM Plus](https://github.com/DitroniX/IPEM-Plus-ESP32-C5-LoRa-LoRaWAN-IoT-Mains-Power-Energy-Monitor).  This is an ESP32-C5 and LoRa based IoT Mains Power Energy Monitor, for Standalone or Integrated Remote Projects.
+
+## Board Views
+
 ![IPEM PiHat ](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20Top.jpg)
 
 IPEM PiHat Lite
