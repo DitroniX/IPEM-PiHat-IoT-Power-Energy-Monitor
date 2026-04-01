@@ -1,3 +1,4 @@
+
 # IPEM PiHat and IPEM PiHat Lite | ATM90E36 IoT Mains Power Energy Monitors
 
 **Supporting STEM Electronic Internet of Things & Home Automation Technology for Smart Energy Monitoring**
@@ -9,6 +10,8 @@
 ## Welcome to IPEM PiHat
 
 The **IPEM PiHat** and **IPEM PiHat Lite,** are Mains AC Power Energy Monitor boards, which are designed to be used alongside Raspberry Pi, and similar single board computers.
+
+![IPEM PiHat](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20-%20Overview.png)
 
 ### What is a Power Energy Monitor?
 
