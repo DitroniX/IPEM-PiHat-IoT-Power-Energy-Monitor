@@ -4,7 +4,7 @@
 
 [![DitroniX WiKi Pages](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/GitHub%20WiKi.png?raw=true)](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/wiki)
 
-[**For Latest Project Updates - Click Here**](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/edit/main/README.md#updates)
+[**For Latest Project Updates - Click Here**](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/tree/main?tab=readme-ov-file#updates)
 
 ## Welcome to IPEM PiHat
 
