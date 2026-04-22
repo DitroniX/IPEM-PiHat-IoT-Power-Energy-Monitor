@@ -2,6 +2,10 @@
 
 ------------
 
+## See also FliX Development Code - IPEM PiHat - ESPuno Pi Zero
+
+[https://github.com/DitroniX/FLIX-DitroniX-Power-Energy-Monitors-Firmware ](https://github.com/DitroniX/FLIX-DitroniX-Power-Energy-Monitors-Firmware)
+
 
 This folder will contain expanding example and full test code.
 
