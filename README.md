@@ -41,6 +41,9 @@ The **IPEM PiHat** also has a new big brother called [IPEM Plus](https://github.
 
 ## Board Views
 
+
+![IPEM PiHat (April 2026)](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20(April%202026).png)
+
 ![IPEM PiHat ](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20Top.jpg)
 
 IPEM PiHat Lite
