@@ -312,6 +312,7 @@ Our STEM SDK boards and accessories are available from our online shops on [eBay
 
 ## Updates:
 
+ - 26-05-03 - More IPEM PiHat Lite boards in production.  Estimated later this month.
  - 26-04-22 - Boards back in Stock.  IPEM PiHat for Single Phase, [two jumpers have been included](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/wiki/Single-Phase-Configuration) in the April 2026 release of the board.
  - 26-04-01 - IPEM PiHat Updated to include Jumpers for Single Phase. New production run in progress.  Stock due mid April.
  - 25-06-15 - [FLiX PiHat](https://github.com/DitroniX/FLIX-DitroniX-Power-Energy-Monitors-Firmware) Development Code Firmware Beta released
