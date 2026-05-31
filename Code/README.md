@@ -6,6 +6,8 @@
 
 [https://github.com/DitroniX/FLIX-DitroniX-Power-Energy-Monitors-Firmware ](https://github.com/DitroniX/FLIX-DitroniX-Power-Energy-Monitors-Firmware)
 
+## Remember to Solder the Pi Header!
+![IPEM PiHat - Remember to SOLDER the Pi Header!](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20-%20Remember%20to%20SOLDER%20the%20Pi%20Header!.png)
 
 This folder will contain expanding example and full test code.
 
