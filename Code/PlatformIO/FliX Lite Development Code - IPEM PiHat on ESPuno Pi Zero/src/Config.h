@@ -29,11 +29,11 @@
 // ################################ Main ################################
 
 // Application
-const String AppVersion = "260422"; // Internal Firmware Date Code
+const String AppVersion = "260530"; // Internal Firmware Date Code
 
 // Version Check - Automatic Selection
 String AppName;                   // App Name - Do Not Change
-String AppAcronym = "IPEM"; // Board Acronym - Do Not Change
+String AppAcronym = "IPEM PiHat"; // Board Acronym - Do Not Change
 
 // App USER
 const String LocationName = "R&D Test"; // Enter Name Location of Device such as House, Solar etc.  Used for Serial Monitor and OLED.
@@ -46,14 +46,12 @@ const boolean EnableNoiseFilterSquelch = true; // This realtes to NoiseFilterSqu
 
 // Constants USER
 const int LoopDelay = 1; // Loop Delay in Seconds
-const int OLEDDelay = 1; // OLED Delay in Seconds
 
 // ################################ Defaults ################################
 
-boolean EnableSimpleLoop = false;               // Set to true to display, in Serial Monitor, loop Simple readings and displaying only one per reset cycle.  Default false.
-boolean EnableBasicLoop = true;                 // Set to true to display, in Serial Monitor, loop readings and displaying only one per reset cycle.  Default true.
-boolean EnableDisplayBoardConfiguration = true; // Set to true to display, in Serial Monitor, board software configuration Information if DisplayFull is true. Default true.
-boolean EnableOLEDLoop = true;                  // Set to true to enable OLED Display in Loop.  Over-ride via I2C Scan.  Check OLED Instance below, for OLED Selection.  Default true.
+boolean EnableSummaryInfo = true;               // Set to true to display, in Serial Monitor, Summary readings and displaying only one per reset cycle.  Default false.
+boolean EnableBasicLoop = false;                 // Set to true to display, in Serial Monitor, loop readings and displaying only one per reset cycle.  Default true.
+boolean EnableDisplayBoardConfiguration = false; // Set to true to display, in Serial Monitor, board software configuration Information if DisplayFull is true. Default true.
 
 // ################################ System Defaults ################################
 
@@ -65,7 +63,6 @@ boolean EnableADC = false;    // ADS1115 ADC - Do Not Change
 boolean EnableTMP = false;    // TMP102 - Do Not Change
 boolean EnablePCA = false;    // PCA9671 - Do Not Change
 boolean EnableRTC = false;    // DS3231 - Do Not Change
-boolean EnableOLED = false;   // OLED - Do Not Change
 
 // ################################ I2C Configuration ################################
 
@@ -94,7 +91,10 @@ boolean EnableOLED = false;   // OLED - Do Not Change
 
 // Define I2C (Addresses)
 #define I2C_Address_EPZ 0x20 // ESPuno Pi Zero PCA9671 (0x20 Default - Avoid Conflicts)
-#define I2C_Address_IPH 0x10 // IPEM PiHat PCA9671 (0x10 Default - Set Switch - Avoid Conflicts)
+
+// Just switch ON A1.  All the reset should be OFF
+#define I2C_Address_IPH 0x21 // IPEM PiHat PCA9671 (0x10 or 0x21 Default - Set Switch - Avoid Conflicts)
+
 
 // **************** PCA9671 INPUTS ****************
 #define ATM_WO 0      // P00 - ATM Warning Out - Normally Low

@@ -14,17 +14,11 @@
 #include <SPI.h>
 #include <Wire.h>
 
-#include <OLED.h>
-
 #include <PCA9671_GPIO.h>
 #include <ATM90E36.h>
 #include <Hardware.h>
 
 #include <Reboot.h>
-
-#include <Radio_WiFi.h>
-#include <Domoticz.h>
-#include <MQTT.h>
 
 // **************** FUNCTIONS AND ROUTINES ****************
 
@@ -158,7 +152,7 @@ void DisplayRegisters(boolean DisplayFull = true)
   if (DisplayFull == true) // Display Expanded Information
     Serial.println("");
 
-  if (EnableSimpleLoop == false)
+  if (EnableSummaryInfo == false)
   {
     // Active Power.  Extra Import/Export values included to provide added detail for Home Automation logging
     String ActiveFlag = "";
@@ -351,79 +345,29 @@ void DisplayRegisters(boolean DisplayFull = true)
       Serial.println("Current Harmonics CT3: " + String(CurrentHarmonicsCT3));
       Serial.println("");
     }
-
-    if (DisplayFull == true) // Display Expanded Information
-      PrintUnderline("Other Information");
-
-    // Chip Temperature
-    ChipTemperature = NoiseFilterSquelch(eic.GetTemperature());
-
-    if (DisplayFull == true) // Display Expanded Information
-      Serial.println("Chip Temperature: " + String(ChipTemperature) + " °C\n");
-
-    // Line Frequency
-    LineFrequency = NoiseFilterSquelch(eic.GetFrequency());
-
-    if (DisplayFull == true) // Display Expanded Information
-      Serial.println("Mains Frequency: " + String(LineFrequency) + " Hz\n");
   }
+
+  if (DisplayFull == true) // Display Expanded Information
+    PrintUnderline("Other Information");
+
+  // Chip Temperature
+  ChipTemperature = NoiseFilterSquelch(eic.GetTemperature());
+
+  if (DisplayFull == true || EnableSummaryInfo == true) // Display Expanded Information
+    Serial.println("Chip Temperature: " + String(ChipTemperature) + " °C\n");
+
+  // Line Frequency
+  LineFrequency = NoiseFilterSquelch(eic.GetFrequency());
+
+  if (DisplayFull == true || EnableSummaryInfo == true) // Display Expanded Information
+    Serial.println("Mains Frequency: " + String(LineFrequency) + " Hz\n");
 
   // Read TMP102 Temperature
   if (EnableTMP == true)
     ReadTMPTemperature();
 
   Serial.println("");
-} // EnableSimpleLoop == false
-
-// Display WiFI Status OLED
-void DisplayOLEDWiFiStatus()
-{
-  // Firmware Version / Board Location - Display on OLED
-  if (EnableOLED == true && EnableOLEDLoop == true)
-
-  {
-
-    // WiFi Connection Status - Display on OLED
-    oled.clear();
-    OLEDPrint(AppAcronym, 2, 0);
-    OLEDPrint(LocationName, 2, 2);
-    oled.update();
-    delay(1000);
-
-    oled.clear();
-    OLEDPrint("Wi-Fi AP", 2, 0);
-    if (WiFi.status() == WL_CONNECTED)
-    {
-      OLEDPrint("SSID:" + String(WiFi.SSID()), 1, 2);
-      OLEDPrint(String(WiFi.RSSI()) + "dBm " + RSSI_Info(WiFi.RSSI()), 1, 3);
-    }
-    else
-    {
-      OLEDPrint("Not Connected", 1, 2);
-      if (DisableWiFi == true)
-      {
-        OLEDPrint("Wi-Fi Force Disabled", 1, 3);
-      }
-    }
-
-    oled.update();
-    delay(100);
-
-    if (DisableWiFi == false && WiFi.status() == WL_CONNECTED)
-    {
-      oled.clear();
-      OLEDPrint("Wi-Fi IP", 2, 0);
-      if (WiFi.status() == WL_CONNECTED)
-      {
-        OLEDPrint(WiFi.localIP().toString().c_str(), 1, 2);
-        OLEDPrint("Host:" + String(WiFi.getHostname()), 1, 3);
-      }
-
-      oled.update();
-      delay(1000);
-    }
-  }
-} // DisplayOLEDWiFiStatus
+} // EnableSummaryInfo == false
 
 // **************** SETUP ****************
 void setup()
@@ -444,28 +388,9 @@ void setup()
   // Board Port Configuration
   ConfigureBoard();
 
-  // Display Wi-Fi Options
-  Serial.println("");
-  PrintUnderline("Wi-Fi Options");
-
-  // Initialise WiFi and WebServer/OTA
-  if (DisableWiFi == false)
-  {
-    InitialiseWiFi();
-    InitialiseMQTT();
-    InitialiseDomoticz();
-  }
-  else
-  {
-    Serial.println("Wi-Fi Force Disabled - No Publishing");
-  }
-
   // Display Software Options
   Serial.println("");
   PrintUnderline("Software Options");
-
-  // DisplayOLEDWiFiStatus
-  DisplayOLEDWiFiStatus();
 
 // ****************  Initialise the ATM90E36 & Pass related calibrations to its library ****************
 
@@ -491,7 +416,7 @@ void loop() // Future - This is Work in Progress - ISRs Also To Be Added
 {
 
   // Check if Reboot Needed
-  RebootCheck();
+  // RebootCheck();
 
   String sDIR = "";
 
@@ -501,144 +426,11 @@ void loop() // Future - This is Work in Progress - ISRs Also To Be Added
     DisplayRegisters();
     Serial.println("- - - / / - - -\n");
 
-    //   // Update the OLED Display
-    oled.clear();
-    oled.setScale(2);
-
-    if (EnableATM == true)
-    {
-
-      if (LineVoltageAverage > 80 || LineVoltage1 > 80) // Arbitrary Value
-      {
-
-        oled.setCursor(0, 2);
-
-        // Reset Counter
-        if (OLEDCount >= 3)
-          OLEDCount = 0;
-
-        OLEDCount++;
-
-        // Check Active Power and Display on Each Channel
-        oled.printf("%d: ", OLEDCount);
-
-        switch (OLEDCount)
-        {
-        case 1:
-          if (ActivePowerImportCT1 > 0)
-          {
-
-            oled.printf("%.0f W", ActivePowerImportCT1 * 1000);
-
-            sDIR = "Impt";
-          }
-          else if (ActivePowerExportCT1 > 0)
-          {
-
-            oled.printf("%.0f W", ActivePowerExportCT1 * 1000);
-            sDIR = "Expt";
-          }
-          else
-          {
-            oled.printf("0 W");
-            sDIR = "Zero";
-          }
-          break;
-
-        case 2:
-          if (ActivePowerImportCT2 > 0)
-          {
-
-            oled.printf("%.0f W", ActivePowerImportCT2 * 1000);
-            sDIR = "Impt";
-          }
-          else if (ActivePowerExportCT2 > 0)
-          {
-            oled.printf("%.0f W", ActivePowerExportCT2 * 1000);
-            sDIR = "Expt";
-          }
-          else
-          {
-            oled.printf("0 W");
-            sDIR = "Zero";
-          }
-          break;
-
-        case 3:
-          if (ActivePowerImportCT3 > 0)
-          {
-            oled.printf("%.0f W", ActivePowerImportCT3 * 1000);
-            sDIR = "Impt";
-          }
-          else if (ActivePowerExportCT3 > 0)
-          {
-            oled.printf("%.0f W", ActivePowerExportCT3 * 1000);
-            sDIR = "Expt";
-          }
-          else
-          {
-            oled.printf("0 W");
-            sDIR = "Zero";
-          }
-          break;
-        }
-
-        // Header
-        oled.setCursor(0, 0);
-        oled.print(LineVoltage1, 0);
-        oled.println(" V " + sDIR);
-      }
-      else
-      {
-        // Houston, We may have a probem
-        oled.clear();
-        OLEDPrint("Please Chk", 2, 0);
-        OLEDPrint("Line Volts", 2, 2);
-        oled.update();
-
-        delay(1500);
-
-        // DisplayOLEDWiFiStatus
-        DisplayOLEDWiFiStatus();
-      }
-    }
-    else
-    {
-      // Houston, We may have more of a problem.  Check SPI and Chip Select
-      oled.clear();
-      OLEDPrint("Error SPI", 2, 0);
-      OLEDPrint("No ATM:36", 2, 2);
-      oled.update();
-
-      // Disable Read Loop
-      EnableBasicLoop = false;
-    }
     // Heatbeat LED
     PCAGPIO(LED_Green, HIGH);
     delay(100);
     PCAGPIO(LED_Green, LOW);
   }
-  else
-  {
-    // Heatbeat LED
-    PCAGPIO(LED_Red, HIGH);
-    delay(500);
-    PCAGPIO(LED_Red, LOW);
-  }
-
-  // // Publish Values to Domoticz (Set WiFi and Indexes)
-  // if (EnableDomoticz == true && WiFi.status() == WL_CONNECTED)
-  // {
-  //   DisplayRegisters(false); // Refresh Values and Display.  Default false = Mute Expanded Info to Serial
-  //   PublishDomoticzValues(); // Publish Values to Domoticz
-  // }
-
-  // // Publish Values to MQTT (Set WiFi and Indexes)
-  // if (EnableMQTT == true && WiFi.status() == WL_CONNECTED)
-  // {
-  //   DisplayRegisters(false); // Refresh Values and Display.  Default false = Mute Expanded Info to Serial
-  //   PublishMQTTValues();     // Publish Values to MQTT
-  // }
 
   // Loop Delay
   delay(LoopDelay * 1000);

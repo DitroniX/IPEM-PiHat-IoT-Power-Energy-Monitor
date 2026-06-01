@@ -24,11 +24,6 @@ void (*resetFunc)(void) = 0; // DO NOT CHANGE. Declare Reset Function at Address
 void ForceReboot()
 {
     Serial.println("\nForced Reboot ...");
-    oled.clear();
-    OLEDPrint(AppAcronym, 2, 0);
-    OLEDPrint("Forced", 2, 3);
-    OLEDPrint("Reboot", 2, 5);
-    oled.update();
     delay(2000);
 
     resetFunc();

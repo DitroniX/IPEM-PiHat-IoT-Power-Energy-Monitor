@@ -28,7 +28,7 @@ ATM90E36::~ATM90E36()
 void SPI_CS(boolean cs_state = HIGH)
 {
  
-  // delayMicroseconds(1);
+ delayMicroseconds(1);
 
  // Check Hardware CS value.  If > 0 then use Hardware - Else use Software GPIO Expander
   if (CS_GPIO > 0)
@@ -58,7 +58,7 @@ void SPI_CS(boolean cs_state = HIGH)
     }
   }
 
-  // delayMicroseconds(1);
+ delayMicroseconds(1);
 }
 
 // **************** ATM90E - Communication Establishment ****************
@@ -102,7 +102,7 @@ unsigned short ATM90E36::CommEnergyIC(unsigned char RW, unsigned short address, 
   }
 
   /* Must wait 4 us for data to become valid */
-  delayMicroseconds(4);
+  delayMicroseconds(7);
 
   // READ Data
   // Do for each byte in transfer

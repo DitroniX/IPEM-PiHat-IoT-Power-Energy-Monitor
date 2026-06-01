@@ -13,8 +13,6 @@
 #include <SPI.h>
 #include <Wire.h>
 
-#include <OLED.h>
-
 #include <24C64_EEPROM.h>
 #include <ATM90E36.h>
 #include <ADS1115_ADC.h>
@@ -32,7 +30,6 @@ uint64_t chipid = ESP.getEfuseMac(); // Get ChipID (essentially the MAC address)
 int VoltageSensorRaw;    // ADC Raw Voltage Value
 float VoltageCalculated; // Calculated Voltage Value
 int VoltagePercentage;   // Voltage Percentage
-int OLEDCount;           // OLED Information Counter
 
 // Variables ATM
 float LineVoltage1, LineVoltage2, LineVoltage3, LineVoltageTotal, LineVoltageAverage;
@@ -57,6 +54,35 @@ float DCVoltage; // DCV Input Voltage
 ATM90E36 eic{}; //
 
 // **************** FUNCTIONS AND ROUTINES ****************
+
+// Rough and Ready Underline Tesxt.
+void PrintUnderline(String sText)
+{
+  int count = 0;
+  Serial.println(sText);
+
+  while (count <= sText.length())
+  {
+    Serial.print("─");
+    count++;
+  }
+  Serial.println("");
+} // PrintUnderline
+
+// Equally Rough and Ready Dash Separator
+void PrintSeparator(String sText)
+{
+  int count = 0;
+
+  while (count <= (sText.length() / 2) + 1)
+  {
+    Serial.print("- ");
+    count++;
+  }
+  Serial.println("");
+
+  Serial.println(sText);
+} // PrintSeparator
 
 // Display BIN from Var
 void DisplayBIN16(int var)
@@ -167,15 +193,15 @@ void ScanI2CBus()
       {
       case 0x10 ... 0x1F:
         Serial.print(" PCA9671 GPIO Expander");
-        EnablePCA = true;
+        // EnablePCA = true;
         break;
       case 0x20:
         Serial.print(" PCA9671 GPIO Expander (Default)");
-        EnablePCA = true;
+        // EnablePCA = true;
         break;
       case 0x21 ... 0x2F:
         Serial.print(" PCA9671 GPIO Expander");
-        EnablePCA = true;
+        // EnablePCA = true;
         break;
       // case 0x50 ... 0x68: // Commented Out to Stop 'Case' Conflicts
       //   Serial.print(" PCA9671 GPIO Expander");
@@ -194,8 +220,6 @@ void ScanI2CBus()
         EnableADC = true;
         break;
       case 0x3C ... 0x3D:
-        Serial.print(" OLED");
-        EnableOLED = true;
         break;
       case 0x50:
         Serial.print(" EEPROM ESPuno Pi Zero");
@@ -221,7 +245,7 @@ void ScanI2CBus()
         break;
       case 0x7C:
         Serial.print(" PCA9671 GPIO Expander (Reserved Address)");
-        EnablePCA = true;
+        // EnablePCA = true;
         break;
       default:
         Serial.print(" ?");
@@ -256,6 +280,9 @@ void ConfigureBoard()
 
   Serial.println("Scanning and Configuring Board.. Please Wait..\n");
 
+  if (EnableSummaryInfo == true)
+    Serial.println("NO PCA CONTROL.  SUMMARY INFO ONLY\n");
+
   // Initialize SPI Hardware Chip Select
   if (CS_GPIO > 0)
   {
@@ -279,13 +306,13 @@ void ConfigureBoard()
 
   AppName = "Unknown Board";
 
-  if (EnablePCA == true && EnableRTC == false && EnableTMP == true)
+  if (EnableRTC == false && EnableTMP == true)
   {
     AppName = "IPEM PiHat Lite";
     AppAcronym = "IPEM PiHat";
   }
 
-  if (EnablePCA == true && EnableRTC == true && EnableTMP == true)
+  if (EnableRTC == true && EnableTMP == true)
   {
     AppName = "IPEM PiHat";
     AppAcronym = "IPEM PiHat";
@@ -312,10 +339,6 @@ void ConfigureBoard()
   if (EnableADC == true)
     Initialise_ADS1115_ADC();
 
-  // Initialize OLED
-  if (EnableOLED == true)
-    Initialise_OLED();
-
   // Initialize TMP
   if (EnableTMP == true)
     Initialise_TMP102();
@@ -324,7 +347,7 @@ void ConfigureBoard()
   if (EnableRTC == true)
     Initialize_DS3231();
 
-  // Initialize PCA GPIO Expander
+ // Initialize PCA GPIO Expander
   if (EnablePCA == true)
   {
     Initialise_PCA9671();

@@ -1,14 +1,23 @@
-Dave Williams, DitroniX 2019-2025 (ditronix.net)
+Dave Williams, DitroniX 2019-2026 (ditronix.net)
 
 **Development Code - WORK-IN-PROGRESS - NOT FINALASED!!!**
 
 Initial Draft Release: 15th June 2025
+Updated 30th May 2026
 
 ### **Purpose of Code**
 
 The purpose of this firmware code is to drive an IPEM PiHat, or IPEM PiHat Lite, Energy Monitoring Board from an ESP based MCU, rather than from a Raspberry Pi.
 
 The code was developed essentially as an internal testing 'tool', which exercises the IPEM PiHat boards during R&D, bring up and testing.
+
+## Test Jig Using ESPuno Pi Zero
+![IPEM PiHat - Test Jig using Espuno Pi Zero.](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20-%20Test%20Jig%20using%20Espuno%20Pi%20Zero..jpg)
+
+![IPEM PiHat with ESPUno Pi Zero - Being Tested](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20with%20ESPUno%20Pi%20Zero%20-%20Being%20Tested.jpg)
+
+## Remember to Solder the Pi Header!
+![IPEM PiHat - Remember to SOLDER the Pi Header!](https://github.com/DitroniX/IPEM-PiHat-IoT-Power-Energy-Monitor/blob/main/Datasheets%20and%20Information/IPEM%20PiHat%20-%20Remember%20to%20SOLDER%20the%20Pi%20Header!.png)
 
 **Development**
 
